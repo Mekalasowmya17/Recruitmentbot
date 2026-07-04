@@ -3,7 +3,7 @@
 Salary Agent
 -------------------------------------------------------
 Uses SalaryTool to fetch salary benchmarks
-and returns structured JSON for the next agent.
+and returns structured JSON.
 
 Author : AI Recruitment Bot Team
 """
@@ -36,14 +36,14 @@ Skills: {skills}
 
 Return ONLY valid JSON in this format:
 
-{
+{{
     "average_salary": "",
     "salary_range": "",
     "market_demand": "",
     "top_companies": [],
     "recommended_skills": [],
     "summary": ""
-}
+}}
 
 Do not return markdown.
 Return only JSON.
@@ -57,7 +57,7 @@ class SalaryAgent:
         self.salary_tool = SalaryTool()
 
         self.llm = ChatGoogleGenerativeAI(
-            model=os.getenv("MODEL_NAME"),
+            model=os.getenv("MODEL_NAME", "gemini-2.5-flash"),
             google_api_key=os.getenv("GOOGLE_API_KEY"),
             temperature=0.2
         )
@@ -82,12 +82,6 @@ class SalaryAgent:
         experience: int,
         skills: list
     ) -> dict:
-        """
-        Analyze salary benchmark.
-
-        Returns:
-            dict
-        """
 
         try:
 
@@ -104,7 +98,7 @@ class SalaryAgent:
                 | self.parser
             )
 
-            response = chain.invoke(
+            result = chain.invoke(
                 {
                     "salary_report": benchmark["salary_report"],
                     "job_role": job_role,
@@ -114,7 +108,7 @@ class SalaryAgent:
                 }
             )
 
-            return response
+            return result
 
         except Exception as e:
 
@@ -132,7 +126,7 @@ if __name__ == "__main__":
 
     agent = SalaryAgent()
 
-    result = agent.analyze_salary(
+    response = agent.analyze_salary(
         job_role="Machine Learning Engineer",
         location="Hyderabad",
         experience=2,
@@ -144,4 +138,4 @@ if __name__ == "__main__":
         ]
     )
 
-    print(result)
+    print(response)
