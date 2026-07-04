@@ -1,0 +1,41 @@
+Job Title: Machine Learning Engineer
+
+Company: ABC Technologies Pvt Ltd
+
+Location:
+Hyderabad
+
+Experience:
+2-4 Years
+
+Employment Type:
+Full Time
+
+Required Skills:
+- Python
+- SQL
+- Machine Learning
+- Deep Learning
+- TensorFlow
+- Scikit-Learn
+- Pandas
+- NumPy
+- Docker
+- AWS
+- Git
+
+Responsibilities:
+- Develop Machine Learning models.
+- Train and evaluate AI models.
+- Build data pipelines.
+- Deploy ML models into production.
+- Collaborate with Data Scientists and Software Engineers.
+- Optimize model performance.
+
+Preferred Qualifications:
+- B.Tech/M.Tech in Computer Science, AI, Data Science.
+- Good communication skills.
+- Problem-solving ability.
+
+Salary:
+₹8 LPA - ₹15 LPA
