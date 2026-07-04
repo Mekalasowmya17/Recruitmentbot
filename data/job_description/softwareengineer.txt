@@ -1,0 +1,32 @@
+Job Title: Software Engineer
+
+Company: TechNova Solutions
+
+Location:
+Chennai
+
+Experience:
+1-3 Years
+
+Required Skills:
+- Java
+- Python
+- SQL
+- OOP
+- Git
+- REST API
+
+Responsibilities:
+- Develop scalable software.
+- Fix bugs.
+- Participate in code reviews.
+- Write documentation.
+- Collaborate with cross-functional teams.
+
+Preferred Skills:
+- Docker
+- Kubernetes
+- AWS
+
+Salary:
+₹5 LPA - ₹10 LPA

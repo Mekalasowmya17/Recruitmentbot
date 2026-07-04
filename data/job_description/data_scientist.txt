@@ -1,0 +1,35 @@
+Job Title: Data Scientist
+
+Company: AI Innovations Pvt Ltd
+
+Location:
+Hyderabad
+
+Experience:
+2-5 Years
+
+Required Skills:
+- Python
+- Machine Learning
+- Statistics
+- SQL
+- Pandas
+- NumPy
+- Scikit-Learn
+- Power BI
+- Tableau
+
+Responsibilities:
+- Analyze business data.
+- Build predictive models.
+- Develop dashboards.
+- Present business insights.
+- Improve data quality.
+
+Preferred Skills:
+- Deep Learning
+- NLP
+- Generative AI
+
+Salary:
+₹9 LPA - ₹18 LPA
